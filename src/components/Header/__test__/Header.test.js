@@ -8,7 +8,7 @@ describe("Header", () => {
               title="todo"
             />
         );
-        const h1Element = screen.getByText(/tod/i);
+        const h1Element = screen.getByText(/xdd/i);
         expect(h1Element).toBeInTheDocument();
     });
 })
