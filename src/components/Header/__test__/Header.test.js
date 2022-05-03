@@ -4,11 +4,9 @@ import Header from '../Header';
 describe("Header", () => {
     it('should render same text passed into title prop', () => {
         render(
-            <Header 
-              title="todo"
-            />
+            <Header title="todo" />
         );
-        const h1Element = screen.getByText(/todo/i);
+        const h1Element = screen.getByText(/kajsbdkasb/i);
         expect(h1Element).toBeInTheDocument();
     });
 })
