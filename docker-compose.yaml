@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  api:
+    build: ./api
+    image: viktors11/api
+    container_name: api_c
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./api:/app
+      - ./app/node_modules
+  myapp:
+    build: ./myapp
+    image: viktors11/myapp
+    container_name: myapp_c
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./myapp:/app
+      - ./myapp/node_modules
+    stdin_open: true
+    tty: true
