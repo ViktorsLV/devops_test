@@ -1,12 +1,10 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Blogs from './components/Blogs';
 
 function App() {
   return (
     <div className="App">
-      <Header title={'yellow world!'}/>
-      <Blogs/>
+      <Header title={'yellow world after change!'}/>
     </div>
   );
 }
